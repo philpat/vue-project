@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(217, 236, 234);
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 16px 3%;
+    align-items: center;
+}
+.nav a{
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    
+}
+.nav .btn{
+    background-color: rgb(67, 160, 71);
+    padding: 10px 22px;
+    border-radius: 10px;
+    color: white;
+    font-size: larger;
+}
+main{
+    background-color: rgb(217, 236, 234);
+}
+main h1{
+    text-transform: capitalize;
+    color: rgb(67, 160, 71);
+    text-align: center;
+    margin-top: 80px;
+    font-weight: bolder;
+    font-size: 3em;
+    padding: 30px 0;
+    
+}
+.fas{
+    color: #5a5a5a;
+}
+.text{
+    text-transform: capitalize;
+}
+.text h3{
+    font-weight: lighter;
+    line-height: 0.2;
+}
+.text p{
+    color: #5a5a5a;
+    line-height: 0.7;
+}
+.content{
+    display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-column-gap: 16px;
+    grid-row-gap: 30px; 
+    padding: 15px;
+    margin: 10px 60px;
+    gap: 18px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    
+    
+}
+.content-item{
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    
+    
+}
+
+.content-item img{
+    width: 80%;
+    border-radius: 20px;
+    margin-right: 10px;
+    
+}
+
+.btn1{
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 10px 18%; */
+    margin: 10px 10px;
+    
+}
+.btn1 a{
+    padding: 10px 18%;
+    background-color: rgb(67, 160, 71);
+    font-weight: lighter;
+    font-size: 18px;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+}
+.btn1 button{
+    
+    padding: 10px 12%;
+    font-weight: lighter;
+    font-size: 18px;
+    background-color: rgb(67, 160, 71);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+}
+/* .btn1 .cart{
+    padding: 10px 10%;
+} */
+
+
+
+
+
+
+
+/* smaller screen */
+
+/* button{
+    margin: 10px;
+} */
+.cart-total{
+    padding: 10px;
+}
+input[type=email]{
+    width: 35%;
+    height: 25px;
+    margin: 10px;
+}
+.cart-email{
+    display: flex;
+    justify-content: space-between;
+}
+.checkbtn{
+    background-color: aqua;
+    padding: 15px 250px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+@media (max-width: 900px){
+    
+    .content{
+        padding: 0, 5px;
+        margin: 5px 0px;
+    }
+    .view-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .view-text{
+        padding: 0 30px;
+    }
+    .view-img{
+        /* margin-right: 25px; */
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+        width: 100%;
+    }
+    .img-class{
+        width: 100%;
+        align-items: center;
+        /* margin-right: 2px;
+        margin-left: 2px; */
+    }
+    .view-text{
+        margin: auto;
+        padding-left:20px ;
+    }
+}
+
+
+
+
+.view-content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.view-img{
+    margin: 50px 50px ;
+}
+.view-text{
+    padding: 12px 8px;
+}
+.view-text p{
+    line-height: 200%;
+    font-size: large;
+    color: #5a5a5a;
+    padding: 2px 2px;
+}
+.view-text h3{
+    font-size: xx-large;
+    padding-top: 40px;
+    text-transform: capitalize;
+    color: rgb(67, 160, 71) ;
+    font-weight: lighter;
+    line-height: 0.5;
+}
+.view-text .cat{
+    font-size: 0.9em;
+    line-height: 0.7;
+    
+}
+.view-text .price{
+    color: rgb(67, 160, 71) ;
+}
+.view-text button{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: rgb(67, 160, 71); 
+    display: block;
+    padding: 15px 300px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.cart-container{
+    background-color: #fff;
+    margin: 50px 100px;
+    border-radius: 34px;
+    padding-top: 20px;
+}
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+    margin: 20px 35px;
+    border-radius: 8px;
+    padding: 5px 20px;
+    
+}
+.cart-item img{
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    
+}
+.num{
+    display: flex;
+    justify-content: space-around;
+}
+.plus .minus .reset{
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.cart-item h3{
+    color: #fff;
+}
