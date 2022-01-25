@@ -13,11 +13,11 @@ export default createStore({
       state.numberofitems(item)
     },
     increment (state, id) {
-      const item = state.items.map(i => i.id === id)
+      const item = state.cart.map(i => i.id === id)
       item.quantity++
     },
     decrement (state, id) {
-      const item = state.items.map(i => i.id === id)
+      const item = state.cart.map(i => i.id === id)
       item.quantity--
     },
     pushProductTocart (state, productId) {

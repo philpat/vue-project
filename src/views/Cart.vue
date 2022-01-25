@@ -68,21 +68,17 @@ export default {
   methods: {
     changenumberofunits (id) {
       console.log(id)
-      // this.$store.commit('increment', id)
+      this.$store.commit('increment', id)
     }
   }
   // methods: {
   //   changenumberofunits (action, product) {
-  //     console.log('bok', cart)
   //     cart.map((item) => {
   //       let numberofunits = item.numberofunits
-  //       console.log(product.id)
   //       if (product.id === item) {
   //         if (action === 'minus' && numberofunits > 1) {
-  //           console.log('com')
   //           numberofunits--
   //         } else if (action === 'plus' && numberofunits < 1) {
-  //           console.log('gyou')
   //           numberofunits++
   //         }
   //       }
@@ -92,17 +88,6 @@ export default {
   //       }
   //     })
   //   }
-  // }
-  // this.$store.state.commit('increment', id)
-  // methods: {
-  // changenumberofunits (item) {
-  //   this.$store.dispatch('addToCart', item)
-  // },
-  // removeFromCart (item) {
-  //   this.$store.dispatch('removeFromCart', item)
-  // },
-  // add (id) {
-  //   this.$store.commit('increment', id)
   // }
   // methods: {
   //   changenumberofunits (action, product) {
@@ -122,56 +107,5 @@ export default {
   //       }
   //     })
   //   }
-  // methods: {
-  //   changenumberofunits (item) {
-  //     this.$store.dispatch('addToCart', item)
-  //   },
-  //   removeFromCart (item) {
-  //     this.$store.dispatch('removeFromCart', item)
-  //   }
-  // changenumberofunits (item, mode) {
-  //   const result = this.cartItems.find((res) => {
-  //     if (res.item === item) {
-  //       return res.item
-  //     }
-  //   })
-
-  //   if (result) {
-  //     for (let i = 0; i < this.cartItems.length; i++) {
-  //       if (this.cartItems[i].item === item.id) {
-  //         const newItem = {
-  //           ...this.cartItems[i],
-  //           count: mode === 'INCRE' ? this.cartItems[i].count + 1 : this.cartItems[i].count - 1
-  //         }
-  //         console.log('plus')
-  //         this.$set(this.cartItem, i, newItem)
-  //       }
-  //     }
-  //   }
-  // },
-  // removeFromCart (item) {
-  //   const result = this.cartItems.find((res) => {
-  //     if (res.item.id === item.id) {
-  //       return res.item.id
-  //     }
-  //   })
-  //   if (result) {
-  //     for (let i = this.cartItems.length - 1; i >= 0; i--) {
-  //       if (this.cartItems[i].item.id === item.id && this.cartItems[i].count > 0) {
-  //         const newItem = {
-  //           ...this.cartItems[i],
-  //           count: this.cartItems[i].count - 1
-  //         }
-  //         this.$set(this.cartItems, i, newItem)
-  //       }
-  //     }
-  //   }
-  // }
-  // }
-  // let result = this.cartItems.find((res) => {
-  //       if (res.item.id == item.id) {
-  //         return res.item.id;
-  //       }
-  //     }
 }
 </script>

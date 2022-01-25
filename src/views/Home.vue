@@ -10,7 +10,6 @@
         <div class="text">
           <h3>{{product.name}}</h3>
           <p>price: &#8358;{{product.price}}</p>
-          <p class="quantity"> {{ product.quantity }} </p>
           <div class="btn1">
             <router-link :to="{name: 'ProductDetails', params: {id: product.id}}">view</router-link>
             <button @click="addToCart(product)">Add to cart</button>
